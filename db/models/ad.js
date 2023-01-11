@@ -3,11 +3,10 @@ var mongoose = require('mongoose');
 var adSchema = new mongoose.Schema({
     name: String,
     desc: String,
-    img:
-    {
-        data: Buffer,
-        contentType: String
-    }
+    img: {
+        name: String,
+        id: String
+    },
 });
  
 //Image is a model which has a schema imageSchema
